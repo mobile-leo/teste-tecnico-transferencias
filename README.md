@@ -1,6 +1,9 @@
+
 # Transferências Financeiras
 
 Aplicação para gerenciamento de pessoas, contas bancárias e transferências financeiras, permitindo consultar saldos e realizar transferências imediatas ou agendadas.
+
+<img width="1672" height="941" alt="stack" src="https://github.com/user-attachments/assets/fad5910c-d767-4c67-a6cf-e9c471fc9b8b" />
 
 Repositório: [github.com/mobile-leo/teste-tecnico-transferencias](https://github.com/mobile-leo/teste-tecnico-transferencias)
 
