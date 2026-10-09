@@ -1,0 +1,23 @@
+# .NET
+**/bin/
+**/obj/
+*.user
+*.suo
+.vs/
+
+# Angular / Node
+**/node_modules/
+**/dist/
+**/.angular/
+npm-debug.log*
+
+# IDE e sistema operacional
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Ambiente
+.env
+.env.*
+!.env.example

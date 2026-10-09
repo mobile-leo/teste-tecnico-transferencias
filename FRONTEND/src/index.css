@@ -1,0 +1,93 @@
+@import 'tailwindcss';
+
+:root {
+  --background: #f1f4f2;
+  --foreground: #14201c;
+  --card: #ffffff;
+  --card-foreground: #14201c;
+  --muted: #e6ebe8;
+  --muted-foreground: #5f6b67;
+  --border: #d6ddd9;
+  --input: #c9d2cd;
+  --primary: #0e5e4e;
+  --primary-foreground: #f1f4f2;
+  --accent: #c98a12;
+  --accent-soft: #f6ead2;
+  --destructive: #b8402b;
+  --destructive-soft: #f5e1dc;
+  --primary-soft: #dcebe6;
+  --ink: #14201c;
+  --ink-muted: #c9d4cf;
+  --ink-foreground: #f1f4f2;
+  --ring: #0e5e4e;
+  --radius: 0.5rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-soft: var(--primary-soft);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-destructive: var(--destructive);
+  --color-destructive-soft: var(--destructive-soft);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-ink-foreground: var(--ink-foreground);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 4px);
+  --font-sans: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.rise {
+  animation: rise 0.4s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rise {
+    animation: none;
+  }
+}
+
+.receipt-edge {
+  background-image: radial-gradient(circle at 8px -2px, transparent 7px, var(--card) 7.5px);
+  background-size: 16px 10px;
+  background-repeat: repeat-x;
+}
